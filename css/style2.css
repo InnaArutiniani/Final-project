@@ -1,0 +1,79 @@
+body {background: #fff url(../images/top-bdy-bg.jpg) repeat-x 51% 0; 
+	font-family: 'lucida_granderegular';
+}
+h1, h2, h3, h4, h5 {font-weight:normal;}
+p {color: #262626; 
+	font-size: 12px; 
+	line-height: 20px; 
+	margin: 0; 
+	padding: 0;}	
+
+#menuContainer {
+	background: transparent url(../images/menu-cont-bg.png) repeat-x 0 0; height:66px;
+}
+ul.mainMenu {
+	margin:0; 
+	float:left;
+}
+ul.mainMenu li {
+	list-style:none; 
+	float:left; 
+	margin:0 8px 0 0; 
+	background: transparent url(../images/divid-menu.png) no-repeat right 56%; padding-right:8px; 
+}
+ul.mainMenu li a {
+	color:#fff; 
+	font-size:20px; 
+	text-transform: uppercase; 
+	text-shadow:2px 2px 1px #396678; 
+	font-family: 'acmeregular'; 
+	line-height:60px; display:block; 
+	padding:0 10px 0 5px;
+}
+ul.mainMenu li:last-child {
+	background:none;
+}
+ul.mainMenu li.subMenu {
+	position:relative;
+}
+.login {
+	position:relative; 
+	float:right; 
+	margin:0 15px 0 395px;
+}
+.login a.bookTable {
+	width:73px; 
+	padding:15px 10px 0 18px; 
+	text-align:center; 
+	height:96px; 
+	background: transparent url(../images/book-table.png) no-repeat top center; 
+	position:absolute; 
+	left:-95px; 
+	top:-11px; 
+	font-family: 'LeagueGothicRegular'; 
+	font-size:13px; 
+	text-transform: uppercase; 
+	display:block; 
+	text-shadow:0 1px 2px #050305; 
+	color:#fff;
+}
+.login ul li {
+	list-style:none; 
+	float:left; 
+	margin:0 5px; 
+	background: transparent url(../images/divid-menu.png) no-repeat left 56%; 
+	padding-left:12px;
+}
+.login ul li a {
+	color:#fff; 
+	font-size:17px; 
+	text-transform: uppercase; 
+	text-shadow:2px 2px 1px #396678; 
+	font-family: 'acmeregular'; 
+	line-height:30px; display:block; 
+	padding:0 10px; margin:15px 0; 
+	background:#1c5f13; 
+	border-radius:5px;}
+.login ul li:first-child {
+	background:none;
+}
