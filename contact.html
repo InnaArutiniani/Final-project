@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style type="text/css">body { cursor: url('data:image/x-icon;base64,AAACAAEAICACAAAAAAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA3tzZAAAAAAAAAAAQAAAAOAAAAHwAAAD+AAAB/AAAA/gABAfwAA8P4AAf38AAP/+AAH//AAD//gABx/wAA4P+AAcD/gAOA/8AHAf/ADgOP4BwHB8AYDgeAABwHAAA4DgAAcBwAAOA4AADAcAAAAOAAAAHAAAADgAAABwAAAAYAAAAAAAA////x////4P///8B///+AP///AD///gA//HwAf/gYAP/wAAH/4AAD/8AAB/+AAA//AAAf/gAAP/wEAD/4DgAf8BwAH+A4AA/AcAAPwOAgD8HAcB/DgOA//wHAf/4DgP/+BwH//g4D//4cB//f+A//z/Af/8/wP//D8H//wfD//8='), auto; }</style>
+</head>
 <body>
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -24,10 +26,10 @@
 		            	<a href="./index.html">Home</a>
 		            </li>
 		            <li>
-		            	<a href="#">Menu</a>
+		            	<a href="./menu.html">Menu</a>
 		            </li>
 		            <li class="subMenu">
-		                <a href="#">Contact</a>
+		                <a href="./contact.html">Contact</a>
 		            </li>
 		            <li>
 		            	<a href="./sponsor.html">Sponsor</a>
@@ -44,15 +46,93 @@
 		    </div>
 		</div>
     </header>
-    <div class="AboutUS">
+    <div class="AboutUs container">
     	<h3>About Us</h3>
-    	<img src="https://media.sciencephoto.com/image/f0032803/800wm/F0032803-Pizza_chef_holding_pizza_in_front_of_ove.jpg">
+    	<img src="http://pizza.html.themeforest.createit.pl/img/content/contact1-photo.jpg" alt="chef">
     	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
     	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
     </div>
+    <div class="ContactForms container">
+		<h2 class="hdr1">Get &amp; stay in contact</h2>
+		<h3 class="hdr2"><span class="lft"></span>We would like to hear from you<span class="rt"></span></h3>
+		<h4 class="hdr5">Pizza Restaurant</h4>
+		<div class="box7">
+		    <div class="cn1">
+		        <form id="contactForm">
+		            <fieldset>
+		                <label>Name</label><br>
+		                <input type="text"><br>
+		                <label>E-mail</label><br>
+		                <input type="text" data-type="email"><br>
+		                <label>Website</label><br>
+		                <input type="text"><br>
+		                <label>Your Message</label><br>
+		               <textarea></textarea>
+		            </fieldset>
+		            <input type="submit" value="submit" id="sendIt">
+		        </form>
+		    </div>
+		    <div class="cn2">
+		        <p>
+		        <strong>Tel:</strong> +49-(0)40 -73 442 190<br>
+		        <strong>Fax:</strong> +49-(0)40 -73 442 190<br>
+		        <a href="mailto:sayhello@pizza.com">sayhello@pizza.com</a><br><br>
+		        <strong>Adress:</strong><br>
+		        Pizza Restaurant<br>
+		        Your Strett 123<br>
+		        22234 Your City
+		        </p>
+		    </div>
+		    <div class="cn3">
+		        <p><strong>CEO:</strong><br>
+		        Robert Plant<br><br><br>
+
+		        <strong>CO CEO:</strong><br>
+		        Frank Joseph
+		        </p>
+		    </div>
+		    <div class="cn4">
+		        <a href="#"><img src="http://pizza.html.themeforest.createit.pl/img/content/map2.jpg" alt=""></a>
+		    </div>
+		    <div class="clearfix"></div>
+		</div>
+	</div>
+	<footer class="main-footer" id="site-footer">
+		<div class="footer-widgets">
+            <div class="container">
+                <div class="f-widget last f-widget-5">
+                    <div id="mts_contact_info_widget-1" class="widget widget_mts_contact_info_widget"> 
+                        <div class="social-buttons" style="padding-bottom:20px;">
+                            <a href="https://www.facebook.com/gosnippets" target="_blank"><button class="neo-button"><i class="fa fa-facebook fa-1x"></i></button> </a>
+                            <a href="https://twitter.com/GoSnippets" target="_blank"><button class="neo-button"><i class="fa fa-twitter fa-1x"></i></button></a>
+                            <a href="https://www.instagram.com/gosnippets/" target="_blank"><button class="neo-button"><i class="fa fa-instagram fa-1x"></i></button></a>
+                            <a href="https://www.pinterest.com/gosnippets/" target="_blank"><button class="neo-button"><i class="fa fa-pinterest fa-1x" style="color:red;"></i></button></a>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+	    <div class="copyrights">
+	        <div class="container">
+	            <div id="copyright-note">
+	                © Pizzer <i class="fa fa-heart"></i> 2020. All rights reserved. 
+	            </div>
+	        </div>
+	    </div>
+    </footer>
 </body>
+</html>

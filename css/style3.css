@@ -1,0 +1,269 @@
+body {background: #fff url(../images/top-bdy-bg.jpg) repeat-x 51% 0; 
+    font-family: 'lucida_granderegular';
+    place-items: center;
+}
+@import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+ :root {
+     --d: 700ms;
+     --e: cubic-bezier(0.19, 1, 0.22, 1);
+     --font-sans: "Rubik", sans-serif;
+     --font-serif: "Cardo", serif;
+}
+#menuContainer {
+    background: transparent url(../images/menu-cont-bg.png) repeat-x 0 0; 
+    height:66px;
+    margin-top: 10px;
+}
+ul.mainMenu {
+    margin:0; 
+    float:left;
+}
+ul.mainMenu li {
+    list-style:none; 
+    float:left; 
+    margin:0 8px 0 0; 
+    background: transparent url(../images/divid-menu.png) no-repeat right 56%; padding-right:8px; 
+}
+ul.mainMenu li a {
+    color:#fff; 
+    font-size:20px; 
+    text-transform: uppercase; 
+    text-shadow:2px 2px 1px #396678; 
+    font-family: 'acmeregular'; 
+    line-height:60px; display:block; 
+    padding:0 10px 0 5px;
+}
+ul.mainMenu li:last-child {
+    background:none;
+}
+ul.mainMenu li.subMenu {
+    position:relative;
+}
+.login {
+    position:relative; 
+    float:right; 
+    margin:0 15px 0 395px;
+}
+.login a.bookTable {
+    width:73px; 
+    padding:15px 10px 0 18px; 
+    text-align:center; 
+    height:96px; 
+    background: transparent url(../images/book-table.png) no-repeat top center; 
+    position:absolute; 
+    left:-95px; 
+    top:-11px; 
+    font-family: 'LeagueGothicRegular'; 
+    font-size:13px; 
+    text-transform: uppercase; 
+    display:block; 
+    text-shadow:0 1px 2px #050305; 
+    color:#fff;
+}
+.login ul li {
+    list-style:none; 
+    float:left; 
+    margin:0 5px; 
+    background: transparent url(../images/divid-menu.png) no-repeat left 56%; 
+    padding-left:12px;
+}
+.login ul li a {
+    color:#fff; 
+    font-size:17px; 
+    text-transform: uppercase; 
+    text-shadow:2px 2px 1px #396678; 
+    font-family: 'acmeregular'; 
+    line-height:30px; display:block; 
+    padding:0 10px; margin:15px 0; 
+    background:#1c5f13; 
+    border-radius:5px;}
+.login ul li:first-child {
+    background:none;
+}
+.page-content {
+     display: grid;
+     grid-gap: 1rem;
+     padding: 1rem;
+     max-width: 1024px;
+     margin: 0 auto;
+     font-family: var(--font-sans);
+}
+ @media (min-width: 600px) {
+     .page-content {
+         grid-template-columns: repeat(2, 1fr);
+    }
+}
+ @media (min-width: 800px) {
+     .page-content {
+         grid-template-columns: repeat(4, 1fr);
+    }
+}
+.card {
+     position: relative;
+     display: flex;
+     align-items: flex-end;
+     overflow: hidden;
+     padding: 1rem;
+     width: 100%;
+     text-align: center;
+     color: whitesmoke;
+     background-color: whitesmoke;
+     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+ @media (min-width: 600px) {
+     .card {
+         height: 350px;
+    }
+}
+.card:before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 110%;
+     background-size: cover;
+     background-position: 0 0;
+     transition: transform calc(var(--d) * 1.5) var(--e);
+     pointer-events: none;
+}
+ .card:after {
+     content: "";
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 200%;
+     pointer-events: none;
+     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+     transform: translateY(-50%);
+     transition: transform calc(var(--d) * 2) var(--e);
+}
+ .card:nth-child(1):before {
+     background-image: url(https://eijfa9g4ivj.exactdn.com/wp-content/uploads/2020/03/aurelien-lemasson-theobald-x00CzBt4Dfk-unsplash.jpg?strip=all&lossy=1&ssl=1);
+}
+ .card:nth-child(2):before {
+     background-image: url(https://cookieandkate.com/images/2019/02/best-baked-ziti-recipe-5.jpg);
+}
+ .card:nth-child(3):before {
+     background-image: url(https://grandbaby-cakes.com/wp-content/uploads/2020/09/Sicilian-Pizza-1.jpg);
+}
+ .card:nth-child(4):before {
+     background-image: url(https://sallysbakingaddiction.com/wp-content/uploads/2014/08/It-doesnt-get-much-better-than-Homemade-Hawaiian-Pizza.-Tropical-paradise-for-dinner-2.jpg);
+}
+ .card:nth-child(5):before {
+     background-image: url(https://www.ilovefood.com.mt/wp-content/uploads/2011/09/295949_241155712593686_174256882616903_706779_7416061_n3.jpg);
+}
+ .card:nth-child(6):before {
+     background-image: url(https://www.silviocicchi.com/pizzachef/wp-content/uploads/2015/01/mare1.jpg);
+}
+ .card:nth-child(7):before {
+     background-image: url(https://assets.tmecosys.cn/image/upload/t_web767x639/img/recipe/ras/Assets/11F01D83-561E-4A60-AB66-8E591538B4E6/Derivates/56D9BF7B-1196-456F-A7F6-8C6A3810927C.jpg);
+}
+ .card:nth-child(8):before {
+     background-image: url(https://www.wellplated.com/wp-content/uploads/2017/02/Best-Carbonara-Pizza-recipe.jpg);
+}
+ .content {
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+     padding: 1rem;
+     transition: transform var(--d) var(--e);
+     z-index: 1;
+}
+ .content > * + * {
+     margin-top: 1rem;
+}
+ .title {
+     font-size: 1.3rem;
+     font-weight: bold;
+     line-height: 1.2;
+}
+ .copy {
+     font-family: var(--font-serif);
+     font-size: 1.125rem;
+     font-style: italic;
+     line-height: 1.35;
+}
+ .btn1 {
+     cursor: pointer;
+     margin-top: 1.5rem;
+     padding: 0.75rem 1.5rem;
+     font-size: 0.65rem;
+     font-weight: bold;
+     letter-spacing: 0.025rem;
+     text-transform: uppercase;
+     color: white;
+     background-color: black;
+     border: none;
+}
+ .btn1:hover {
+     background-color: #0d0d0d;
+}
+ .btn1:focus {
+     outline: 1px dashed yellow;
+     outline-offset: 3px;
+}
+ @media (hover: hover) and (min-width: 600px) {
+     .card:after {
+         transform: translateY(0);
+    }
+     .content {
+         transform: translateY(calc(100% - 4.5rem));
+    }
+     .content > *:not(.title) {
+         opacity: 0;
+         transform: translateY(1rem);
+         transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+    }
+     .card:hover, .card:focus-within {
+         align-items: center;
+    }
+     .card:hover:before, .card:focus-within:before {
+         transform: translateY(-4%);
+    }
+     .card:hover:after, .card:focus-within:after {
+         transform: translateY(-50%);
+    }
+     .card:hover .content, .card:focus-within .content {
+         transform: translateY(0);
+    }
+     .card:hover .content > *:not(.title), .card:focus-within .content > *:not(.title) {
+         opacity: 1;
+         transform: translateY(0);
+         transition-delay: calc(var(--d) / 8);
+    }
+     .card:focus-within:before, .card:focus-within:after, .card:focus-within .content, .card:focus-within .content > *:not(.title) {
+         transition-duration: 0s;
+    }
+}
+.menubutton {
+    background-color: green;
+    border-radius: 20px;
+    
+}
+.thebutton {
+    grid-column-start: 3;
+}
+.main-footer {
+    overflow: hidden;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 16px;
+    line-height: 25px;
+    background: linear-gradient(135deg, hsl(75deg 86% 11% / 75%) 0%, #17711b 100%);
+    margin-top: 37px;
+}
+.copyrights {
+    float: left;
+    width: 100%;
+    clear: both;
+    padding-bottom: 34px;
+    padding-top: 34px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1;
+}

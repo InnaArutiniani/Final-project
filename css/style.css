@@ -9,7 +9,9 @@ p {color: #262626;
 	padding: 0;}	
 
 #menuContainer {
-	background: transparent url(../images/menu-cont-bg.png) repeat-x 0 0; height:66px;
+	background: transparent url(../images/menu-cont-bg.png) repeat-x 0 0; 
+	height:66px;
+	margin-top: 10px;
 }
 ul.mainMenu {
 	margin:0; 

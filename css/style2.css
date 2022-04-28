@@ -9,7 +9,9 @@ p {color: #262626;
 	padding: 0;}	
 
 #menuContainer {
-	background: transparent url(../images/menu-cont-bg.png) repeat-x 0 0; height:66px;
+	background: transparent url(../images/menu-cont-bg.png) repeat-x 0 0; 
+	height:66px;
+	margin-top: 10px;
 }
 ul.mainMenu {
 	margin:0; 
@@ -76,4 +78,158 @@ ul.mainMenu li.subMenu {
 	border-radius:5px;}
 .login ul li:first-child {
 	background:none;
+}
+.AboutUs {
+	width: 70%;
+}
+.AboutUs p{
+	font-weight: bold;
+	color: darkgreen;
+}
+.hdr1 {
+    background: transparent url(../images/hdr1-ribbon.png) no-repeat top center;
+    height: 67px;
+    text-align: center;
+    font-family: 'acmeregular';
+    font-size: 22px;
+    line-height: 47px;
+    margin: 5px 0;
+    color: #fff;
+margin-top: 30px;}
+.hdr2 {
+    background: transparent;
+    height: 29px;
+    text-align: center;
+    font-family: 'acmeregular';
+    font-size: 20px;
+    line-height: 32px;
+    margin: 20px 0;
+    color: #216d18;
+}
+.hdr2 span.lft {
+    background: transparent url(../images/orm1-left.png) no-repeat top center;
+    width: 56px;
+    padding-right: 10px;
+    height: 29px;
+    display: inline-block;
+}
+.hdr2 span.rt {
+    background: transparent url(../images/orm1-rt.png) no-repeat top center;
+    width: 56px;
+    height: 29px;
+    padding-left: 10px;
+    display: inline-block;
+}
+.hdr5 {
+    color: #fe0000;
+    font-size: 17px;
+    font-family: 'PatuaOneRegular';
+    text-transform: uppercase;
+    margin: 50px 0 10px 0;}
+.box7 {
+    margin: 0 4px;
+}
+.box7 .cn1 {
+    width: 43%;
+    float: left;
+}
+label {
+    font-size: 12px;
+    color: #297b1e;
+    font-family: 'lucida_grandebold';
+}
+input[type=text] {
+    width: 200px;
+}
+input[type=submit] {
+    background: #fe0000;
+    font-size: 13px;
+    line-height: 32px;
+    height: 32px;
+    padding: 0 35px;
+    margin-top: 5px;
+    border: 0;
+    color: #fff;
+    font-family: 'lucida_granderegular';
+}
+.box7 .cn2 {
+    width: 37%;
+    float: left;
+}
+p {
+    color: #262626;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+.box7 .cn3 {
+    width: 20%;
+    float: left;
+}
+.box7 .cn4 {
+    width: 37%;
+    float: left;
+}
+.box7 .cn4 img {
+    border: 1px solid #457b91;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.ContactForms {
+	width:66%;
+}
+.main-footer {
+    overflow: hidden;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 16px;
+    line-height: 25px;
+    background: linear-gradient(135deg, hsl(75deg 86% 11% / 75%) 0%, #17711b 100%);
+    margin-top: 37px;
+}
+.footer-widgets {
+    padding-top: 35px;
+}
+.f-widget-5 {
+    width: 100%;
+    clear: both;
+    text-align: center;
+}
+.neo-button {
+    width: 40px;
+    height: 40px;
+    outline: 0 !important;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #d6d6d6, #ffffff);
+    box-shadow: 20px 20px 60px #ebdfdf, -20px -20px 60px #fcf4f4;
+}
+.copyrights {
+    float: left;
+    width: 100%;
+    clear: both;
+    padding-bottom: 34px;
+    padding-top: 34px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1;
+}
+.social-buttons a, button {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.25s linear;
+}
+.fa-instagram {
+    color: #dc4e41;
+}
+.fa-twitter {
+    color: #55acee;
+}
+.fa-facebook {
+    color: #3b5998;
 }
