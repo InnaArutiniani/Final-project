@@ -39,9 +39,9 @@ ul.mainMenu li.subMenu {
 	position:relative;
 }
 .login {
-	position:relative; 
-	float:right; 
-	margin:0 15px 0 395px;
+	position:relative;
+	height:81px;
+	margin:0 15px 0 572px;
 }
 .login a.bookTable {
 	width:73px; 

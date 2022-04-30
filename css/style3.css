@@ -15,8 +15,7 @@ body {background: #fff url(../images/top-bdy-bg.jpg) repeat-x 51% 0;
     margin-top: 10px;
 }
 ul.mainMenu {
-    margin:0; 
-    float:left;
+    margin:0;
 }
 ul.mainMenu li {
     list-style:none; 
@@ -40,9 +39,10 @@ ul.mainMenu li.subMenu {
     position:relative;
 }
 .login {
-    position:relative; 
-    float:right; 
-    margin:0 15px 0 395px;
+    position:relative;
+    margin:0 15px 0 590px;
+    width:285px;
+    height: 81px;
 }
 .login a.bookTable {
     width:73px; 
