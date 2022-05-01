@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 body {background: #fff url(../images/top-bdy-bg.jpg) repeat-x 51% 0; 
     font-family: 'lucida_granderegular';
     place-items: center;
@@ -97,15 +104,21 @@ ul.mainMenu li.subMenu {
       opacity: 0;
     }
     #menu__toggle:checked + .menu__btn > span {
-      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
     }
     #menu__toggle:checked + .menu__btn > span::before {
       top: 0;
-      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+              transform: rotate(0deg);
     }
     #menu__toggle:checked + .menu__btn > span::after {
       top: 0;
-      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg);
     }
     #menu__toggle:checked ~ .menu__box {
       left: 0 !important;
@@ -127,7 +140,9 @@ ul.mainMenu li.subMenu {
       width: 100%;
       height: 2px;
       background-color: #616161;
-      transition-duration: .25s;
+      -webkit-transition-duration: .25s;
+           -o-transition-duration: .25s;
+              transition-duration: .25s;
     }
     .menu__btn > span::before {
       content: '';
@@ -148,8 +163,11 @@ ul.mainMenu li.subMenu {
       padding: 80px 0;
       list-style: none;
       background-color: #ECEFF1;
-      box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-      transition-duration: .25s;
+      -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+              box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+      -webkit-transition-duration: .25s;
+           -o-transition-duration: .25s;
+              transition-duration: .25s;
     }
     .menu__item {
       display: block;
@@ -159,13 +177,16 @@ ul.mainMenu li.subMenu {
       font-size: 20px;
       font-weight: 600;
       text-decoration: none;
-      transition-duration: .25s;
+      -webkit-transition-duration: .25s;
+           -o-transition-duration: .25s;
+              transition-duration: .25s;
     }
     .menu__item:hover {
       background-color: #CFD8DC;
     }
 }
 .page-content {
+     display: -ms-grid;
      display: grid;
      grid-gap: 1rem;
      padding: 1rem;
@@ -176,25 +197,32 @@ ul.mainMenu li.subMenu {
 }
  @media (min-width: 600px) {
      .page-content {
+         -ms-grid-columns: 1fr 1rem 1fr;
          grid-template-columns: repeat(2, 1fr);
     }
 }
  @media (min-width: 800px) {
      .page-content {
+         -ms-grid-columns: 1fr 1rem 1fr 1rem 1fr 1rem 1fr;
          grid-template-columns: repeat(4, 1fr);
     }
 }
 .card {
      position: relative;
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     align-items: flex-end;
+     -webkit-box-align: end;
+         -ms-flex-align: end;
+             align-items: flex-end;
      overflow: hidden;
      padding: 1rem;
      width: 100%;
      text-align: center;
      color: whitesmoke;
      background-color: whitesmoke;
-     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+             box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
  @media (min-width: 600px) {
      .card {
@@ -210,7 +238,11 @@ ul.mainMenu li.subMenu {
      height: 110%;
      background-size: cover;
      background-position: 0 0;
+     -webkit-transition: -webkit-transform calc(var(--d) * 1.5) var(--e);
+     transition: -webkit-transform calc(var(--d) * 1.5) var(--e);
+     -o-transition: transform calc(var(--d) * 1.5) var(--e);
      transition: transform calc(var(--d) * 1.5) var(--e);
+     transition: transform calc(var(--d) * 1.5) var(--e), -webkit-transform calc(var(--d) * 1.5) var(--e);
      pointer-events: none;
 }
  .card:after {
@@ -222,9 +254,17 @@ ul.mainMenu li.subMenu {
      width: 100%;
      height: 200%;
      pointer-events: none;
+     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(11.7%, rgba(0, 0, 0, 0.009)), color-stop(22.1%, rgba(0, 0, 0, 0.034)), color-stop(31.2%, rgba(0, 0, 0, 0.072)), color-stop(39.4%, rgba(0, 0, 0, 0.123)), color-stop(46.6%, rgba(0, 0, 0, 0.182)), color-stop(53.1%, rgba(0, 0, 0, 0.249)), color-stop(58.9%, rgba(0, 0, 0, 0.32)), color-stop(64.3%, rgba(0, 0, 0, 0.394)), color-stop(69.3%, rgba(0, 0, 0, 0.468)), color-stop(74.1%, rgba(0, 0, 0, 0.54)), color-stop(78.8%, rgba(0, 0, 0, 0.607)), color-stop(83.6%, rgba(0, 0, 0, 0.668)), color-stop(88.7%, rgba(0, 0, 0, 0.721)), color-stop(94.1%, rgba(0, 0, 0, 0.762)), to(rgba(0, 0, 0, 0.79)));
+     background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
-     transform: translateY(-50%);
+     -webkit-transform: translateY(-50%);
+         -ms-transform: translateY(-50%);
+             transform: translateY(-50%);
+     -webkit-transition: -webkit-transform calc(var(--d) * 2) var(--e);
+     transition: -webkit-transform calc(var(--d) * 2) var(--e);
+     -o-transition: transform calc(var(--d) * 2) var(--e);
      transition: transform calc(var(--d) * 2) var(--e);
+     transition: transform calc(var(--d) * 2) var(--e), -webkit-transform calc(var(--d) * 2) var(--e);
 }
  .card:nth-child(1):before {
      background-image: url(https://eijfa9g4ivj.exactdn.com/wp-content/uploads/2020/03/aurelien-lemasson-theobald-x00CzBt4Dfk-unsplash.jpg?strip=all&lossy=1&ssl=1);
@@ -252,12 +292,23 @@ ul.mainMenu li.subMenu {
 }
  .content {
      position: relative;
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     flex-direction: column;
-     align-items: center;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
      width: 100%;
      padding: 1rem;
+     -webkit-transition: -webkit-transform var(--d) var(--e);
+     transition: -webkit-transform var(--d) var(--e);
+     -o-transition: transform var(--d) var(--e);
      transition: transform var(--d) var(--e);
+     transition: transform var(--d) var(--e), -webkit-transform var(--d) var(--e);
      z-index: 1;
 }
  .content > * + * {
@@ -295,35 +346,59 @@ ul.mainMenu li.subMenu {
 }
  @media (hover: hover) and (min-width: 600px) {
      .card:after {
-         transform: translateY(0);
+         -webkit-transform: translateY(0);
+             -ms-transform: translateY(0);
+                 transform: translateY(0);
     }
      .content {
-         transform: translateY(calc(100% - 4.5rem));
+         -webkit-transform: translateY(calc(100% - 4.5rem));
+             -ms-transform: translateY(calc(100% - 4.5rem));
+                 transform: translateY(calc(100% - 4.5rem));
     }
      .content > *:not(.title) {
          opacity: 0;
-         transform: translateY(1rem);
+         -webkit-transform: translateY(1rem);
+             -ms-transform: translateY(1rem);
+                 transform: translateY(1rem);
+         -webkit-transition: opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
+         transition: opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
+         -o-transition: transform var(--d) var(--e), opacity var(--d) var(--e);
          transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+         transition: transform var(--d) var(--e), opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
     }
      .card:hover, .card:focus-within {
-         align-items: center;
+         -webkit-box-align: center;
+             -ms-flex-align: center;
+                 align-items: center;
     }
      .card:hover:before, .card:focus-within:before {
-         transform: translateY(-4%);
+         -webkit-transform: translateY(-4%);
+             -ms-transform: translateY(-4%);
+                 transform: translateY(-4%);
     }
      .card:hover:after, .card:focus-within:after {
-         transform: translateY(-50%);
+         -webkit-transform: translateY(-50%);
+             -ms-transform: translateY(-50%);
+                 transform: translateY(-50%);
     }
      .card:hover .content, .card:focus-within .content {
-         transform: translateY(0);
+         -webkit-transform: translateY(0);
+             -ms-transform: translateY(0);
+                 transform: translateY(0);
     }
      .card:hover .content > *:not(.title), .card:focus-within .content > *:not(.title) {
          opacity: 1;
-         transform: translateY(0);
-         transition-delay: calc(var(--d) / 8);
+         -webkit-transform: translateY(0);
+             -ms-transform: translateY(0);
+                 transform: translateY(0);
+         -webkit-transition-delay: calc(var(--d) / 8);
+              -o-transition-delay: calc(var(--d) / 8);
+                 transition-delay: calc(var(--d) / 8);
     }
      .card:focus-within:before, .card:focus-within:after, .card:focus-within .content, .card:focus-within .content > *:not(.title) {
-         transition-duration: 0s;
+         -webkit-transition-duration: 0s;
+              -o-transition-duration: 0s;
+                 transition-duration: 0s;
     }
 }
 .menubutton {
@@ -332,7 +407,8 @@ ul.mainMenu li.subMenu {
     
 }
 .thebutton {
-    grid-column-start: 3;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
 }
 .main-footer {
     overflow: hidden;
@@ -340,6 +416,7 @@ ul.mainMenu li.subMenu {
     color: rgba(255, 255, 255, 0.75);
     font-size: 16px;
     line-height: 25px;
+    background: -o-linear-gradient(315deg, hsl(75deg 86% 11% / 75%) 0%, #17711b 100%);
     background: linear-gradient(135deg, hsl(75deg 86% 11% / 75%) 0%, #17711b 100%);
     margin-top: 37px;
 }
